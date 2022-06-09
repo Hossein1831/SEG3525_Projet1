@@ -1,0 +1,224 @@
+.navbar {
+    background-color: #194569;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar a {
+    color: antiquewhite;
+}
+ 
+.description {
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.icons {
+    font-size: large;
+    width: 35px;
+    height: 35px;
+    float: right;
+    color: antiquewhite;
+}
+
+.glassespic {
+    width: 480px;
+    height: 400px;
+    border-radius: 15%;
+}
+
+.paragraph {
+    text-align: left;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.heading {
+    text-align: left;
+}
+
+.designSimple {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.caracteristics {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.separate {
+    height: 10px;
+    width: 50%;
+    color: #194569;
+    margin: auto;
+}
+
+.serviceOptions {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    align-items: center;
+}
+
+/*the card boxes*/
+.card {
+    color: antiquewhite;
+    height: 425px;
+    width: 350px;
+    border-radius: 40px;
+    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Raleway', sans-serif;
+}
+
+/*buttons customize*/
+.card-body a {
+    color: antiquewhite;
+    background-color: #326273;
+    border: 0px;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.card-body a:hover, .card-body a:focus {
+    color: #326273;
+    background-color: antiquewhite;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);  
+    transform: translateY(-0.25em); 
+    transition-timing-function: 2s;
+}
+
+.HowToContactUs {
+    text-align: center;
+    height: 100px;
+    margin-bottom: 70px;
+}
+
+/*phone and email section style*/
+.phoneEmailCard {
+    background-color: #2972ae;
+    color: antiquewhite;
+    font-size: 22px;
+    width: 400px; 
+    height: 200px; 
+    border-radius: 50px;
+    box-shadow: 20px 20px 15px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Raleway', sans-serif;
+}
+
+.PECText {
+    margin-left: 30px;
+}
+
+.EmailCard {
+    margin-top: 100px;
+}
+
+/*Working Hours Style*/
+.OpenHoursCard {
+    background-color: #2972ae;
+    color: antiquewhite;
+    font-size: 27px;
+    width: 400px; 
+    height: 500px; 
+    border-radius: 50px;
+    box-shadow: 20px 20px 15px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Raleway', sans-serif;
+}
+
+.WorkHoursHeading {
+    text-align: center;
+}
+
+.WorkHoursText {
+    margin-left: 40px;
+}
+
+.container {
+    margin-bottom: 150px;
+}
+
+/*Comment box Style*/
+.SubmitButton {
+    border-radius: 10px;
+    width: 100px;
+    border: transparent;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Raleway', sans-serif;
+}
+
+.commentBox input:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);  
+    transform: translateY(-0.25em); 
+    transition-timing-function: 2s;
+}
+
+.cardtechnicians {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #194569;
+    border-radius: 40px;
+    color: antiquewhite;
+    font-size: 20px;
+    width: 300px; 
+    height: 500px; 
+    border-radius: 50px;
+    box-shadow: 20px 20px 15px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}
+
+.headingtechnicians {
+    margin-bottom: 50px;
+}
+
+.imageCard {
+    height: 200px;
+    width: 215px;
+    border-radius: 50%;
+    border: 3px solid #2972ae;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+/*Appointment page*/
+/*name email and phone div*/
+
+.inputBox {
+    margin-left: 5%;
+    border-radius: 20px;
+    height: auto;
+    width: 300px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 50px;
+}
+
+.verticalline {
+    border-left: 6px solid #194569;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+    margin-top: 200px;
+}
+
+.scheduleBtn button { 
+    background-color: #326273;
+    border-radius: 40px;
+    color: antiquewhite;
+    font-size: 20px;
+    border-radius: 50px;
+    box-shadow: 20px 20px 15px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}

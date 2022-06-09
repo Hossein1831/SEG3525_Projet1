@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datep1cker.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn .jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script src="myscripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Users/hhajm/Desktop/SEG3525 Website Project/CSS/CSS_Website.css"
+    />
+    <title>Schedule Appointment</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body style="background-color: floralwhite">
+    <div class="navbar">
+      <nav class="navbar navbar-expand-lg fixed-top justify-content-center">
+        <a
+          class="navbar-brand"
+          href="/Users/hhajm/Desktop/SEG3525 Website Project/Home.html"
+          >SimplyVision</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="ScheduleAppointments.html"
+              >Appointments</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="/Users/hhajm/Desktop/SEG3525 Website Project/Contact Us.html"
+              >Contact Us</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+            >
+              Help Center
+            </a>
+            <ul
+              class="dropdown-menu"
+              aria-labelledby="navbarDropdownMenuLink"
+              style="background-color: #91aec4"
+            >
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Buy/Rent</a>
+              </li>
+              <li>
+                <a class="dropdown-item" aria-current="page" href="#"
+                  >Products</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="chooseService">
+      <div class="inputBox col-md-5">
+        <div class="chooseReason" style="margin-bottom: 15px">
+          <label for="AppointReason" class="form-label">
+            Choose the reason for your appointment*
+          </label>
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="AppointReason"
+          >
+            <option selected>Open this select menu</option>
+            <option value="1">Buy/Rent Device</option>
+            <option value="2">Test Device</option>
+            <option value="3">Repair Device</option>
+          </select>
+        </div>
+
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-6">
+            <label for="inputFirstName" class="form-label">First Name*</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputFirstName"
+              required
+            />
+            <div class="invalid-feedback">Please enter your first name!</div>
+          </div>
+          <div class="col-md-6">
+            <label for="inputLastName" class="form-label">Last Name*</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputLastName"
+              required
+            />
+            <div class="invalid-feedback">Please enter your last name!</div>
+          </div>
+          <div class="col-12">
+            <label for="inputEmailAddress" class="form-label"
+              >Email Address*</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmailAddress"
+              placeholder="name@example.com"
+              required
+            />
+            <div class="invalid-feedback">Please enter your email address!</div>
+          </div>
+          <div class="col-12">
+            <label for="inputPhoneNumber" class="form-label"
+              >Phone Number*</label
+            >
+            <input
+              type="tel"
+              class="form-control"
+              id="inputPhoneNumber"
+              placeholder="123-456-7890"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Additional comment about why you want an appointment</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Additional comment..."
+            ></textarea>
+          </div>
+          <div class="chooseTechnician">
+            <label for="ChooseTechnician" class="form-label">
+              Choose your technician*
+            </label>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              id="ChooseTechnician"
+            >
+              <option selected>Open this select menu</option>
+              <option value="1">Hossein H</option>
+              <option value="2">Samuel V</option>
+              <option value="3">Edy K</option>
+              <option value="3">Wilfried L</option>
+            </select>
+          </div>
+
+          <label for="date">Date</label>
+          <div class="col-6">
+            <div class="input-group date" id="datepicker">
+              <input type="text" class="form-control" />
+              <span class="input-group-append">
+                <span class="input-group-text bg-white d-block">
+                  <i class="fa fa-calendar"></i>
+                </span>
+              </span>
+            </div>
+          </div>
+          <script>
+            //JS code for date picker
+            $(function () {
+              $("#datepicker").datepicker();
+            });
+          </script>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="gridCheck"
+                required
+              />
+              <label class="form-check-label" for="gridCheck">
+                I agree with terms & conditions
+              </label>
+              <div id="invalidCheck3Feedback" class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="scheduleBtn col-12">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+              id="ScheduleBtn"
+            >
+              Schedule Appointment
+            </button>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("modal");
+
+              // Get the button that opens the modal
+              var btn = document.getElementById("myBtn");
+
+              // Get the <span> element that closes the modal
+              var span = document.getElementsByClassName("close")[0];
+
+              // When the user clicks the button, open the modal
+              btn.onclick = function () {
+                modal.style.display = "block";
+              };
+
+              // When the user clicks on <span> (x), close the modal
+              span.onclick = function () {
+                modal.style.display = "none";
+              };
+
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function (event) {
+                if (event.target == modal) {
+                  modal.style.display = "none";
+                }
+              };
+            </script>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5
+                      class="modal-title"
+                      id="staticBackdropLabel"
+                      style="font-family: 'Raleway', sans-serif"
+                    >
+                      Confirmation message!
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div
+                    class="modal-body"
+                    style="font-family: 'Raleway', sans-serif"
+                  >
+                    Thank you for taking an appointment with us! <br />
+                    An email with all the information about your appointment
+                    will be sent to you shorlty! <br />Thank you!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="verticalline"></div>
+    </div>
+    <hr
+      style="height: 3px; background-color: #194569; width: 85%; margin: auto"
+    />
+    <nav
+      class="navbar sticky-bottom"
+      style="background-color: #30638e; height: auto"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="/Users/hhajm/Desktop/SEG3525 Website Project/Home.html"
+        >
+          SimplyVision
+        </a>
+        <a href="/Users/hhajm/Desktop/SEG3525 Website Project/Contact Us.html">
+          How to contact us?
+        </a>
+        <a href="ScheduleAppointments.html"> Schedule an Appointment </a>
+      </div>
+    </nav>
+  </body>
+</html>
